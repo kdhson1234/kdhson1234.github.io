@@ -1,5 +1,5 @@
 ---
-title: "🔖카테고리"
+title: "🔖태그"
 layout: tags
 permalink: /tags/
 author_profile: true
