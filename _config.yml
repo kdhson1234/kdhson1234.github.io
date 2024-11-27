@@ -26,12 +26,12 @@ url                      : "https://kdhson1234.github.io"
 baseurl                  : "" # 레퍼지토리 이름이 username.github.io형식이 아닐경우 작성한 형식으로 사용할 수 있도록 해줌
 repository               : "https://kdhson1234.github.io"
 teaser                   : # 포스트별 티저 이미지를 정해놓지 않으면 기본적으로 보이는 티저 이미지(글 옆에 보이는 이미지)
-logo                     : "./Logo.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : # 왼쪽 상단 타이틀 왼쪽에 붙는 이미지
+masthead_title           : "화면 타이틀"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
+enable_copy_code_button  : true
+copyright                : false
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -89,12 +89,6 @@ yandex_site_verification :
 baidu_site_verification  :
 
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -320,7 +314,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
-      share: true
+      comments: true
+      share: false
       related: true
       sidebar_main: true
