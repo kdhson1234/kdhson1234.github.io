@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+rtl                      : false # true시 텍스트가 오른쪽에서 왼쪽으로 바뀜
 title                    : "코딩하는 감귤🍊 : 제주 지부"
 title_separator          : "-"
-subtitle                 : "test"
+subtitle                 : # 왼쪽 상단 밑부분에 작은 글씨로 나오는 부제목
 name                     : "감규리"
 description              : "🍊 감귤 🍊"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+url                      : "https://kdhson1234.github.io"
+baseurl                  : "" # 레퍼지토리 이름이 username.github.io형식이 아닐경우 작성한 형식으로 사용할 수 있도록 해줌
+repository               : "https://kdhson1234.github.io"
+teaser                   : # 포스트별 티저 이미지를 정해놓지 않으면 기본적으로 보이는 티저 이미지(글 옆에 보이는 이미지)
+logo                     : "./Logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
