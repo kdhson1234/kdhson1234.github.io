@@ -24,17 +24,17 @@ name                     : "감규리"
 description              : "🍊 감귤 🍊"
 url                      : "https://kdhson1234.github.io"
 baseurl                  : "" # 레퍼지토리 이름이 username.github.io형식이 아닐경우 작성한 형식으로 사용할 수 있도록 해줌
-repository               : "https://kdhson1234.github.io"
+repository               : "kdhson1234/Comments"
 teaser                   : # 포스트별 티저 이미지를 정해놓지 않으면 기본적으로 보이는 티저 이미지(글 옆에 보이는 이미지)
 logo                     : # 왼쪽 상단 타이틀 왼쪽에 붙는 이미지
-masthead_title           : "화면 타이틀"
+masthead_title           : 
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : true
 copyright                : false
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : utterances # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -45,8 +45,8 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : github-dark # "github-light" (default), "github-dark"
+    issue_term           : pathname # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
