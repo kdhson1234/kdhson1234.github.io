@@ -3,6 +3,6 @@ main:
   - title: "Home"
     url: https://kdhson1234.github.io
   - title: "Categories"
-    url: https://kdhson1234.github.io/pages/Categories/
+    url: /categories/
   - title: "Tag"
     url: /tags/
