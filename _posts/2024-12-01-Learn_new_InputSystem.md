@@ -9,8 +9,8 @@ tags:
 toc: true
 toc_sticky: true
 
-date: 2020-05-25
-last_modified_at: 2024-11-25
+date: 2024-12-01
+last_modified_at: 2024-12-01
 ---
 New Input System이란 기존 유니티의 Input System의 단점을 보완한 시스템이다.  
 기존 Input System은 코드로 수정해야했다면,  
