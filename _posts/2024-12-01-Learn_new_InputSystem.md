@@ -1,5 +1,5 @@
 ---
-title: "[Unity]"New Input System"을 배워보았다"
+title: "New Input System을 배워보았다"
 
 categories: 
   Unity
