@@ -1,5 +1,5 @@
 ---
-title: "New Input System을 배워보았다"
+title: "New Input System (1)"
 
 categories: 
   Unity
@@ -12,7 +12,8 @@ toc_sticky: true
 date: 2024-12-01
 last_modified_at: 2024-12-01
 ---
-New Input System이란 기존 유니티의 Input System의 단점을 보완한 시스템이다.  
+# New Input System이란?  
+기존 유니티의 Input System의 단점을 보완한 시스템이다.  
 기존 Input System은 코드로 수정해야했다면,  
 New Input System은 Input Actions를 통해 Key Setting을 할 수 있다.  
 
@@ -31,9 +32,4 @@ New Input System을 사용할거라면 "Input System Package (new)"
 를 선택하면 된댜.  
 
 그러면 다음 포스팅 때 사용해보도록하자!  
-
-
-첫 블로그라 그런지 글쓰는게 쉽지 않았어요...  
-그래도 앞으로 꾸준히 글 올리면서 실력을 올려가겠습니다!  
-감사합니다...ㅠ  
 ![image](https://github.com/user-attachments/assets/9cbda8c8-9146-4f78-967d-c6132e65324b)

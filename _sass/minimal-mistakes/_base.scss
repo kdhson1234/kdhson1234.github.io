@@ -124,7 +124,7 @@ blockquote {
 }
 
 /* links */
-
+/* original
 a {
   &:focus {
     @extend %tab-focus;
@@ -138,138 +138,134 @@ a {
     color: $link-color-hover;
     outline: 0;
   }
-}
+}*/
+a {
+  text-decoration: none;
 
-/* buttons */
+  &:focus {
+    @extend %tab-focus;
+  }
+  /* buttons */
 
-button:focus {
-  @extend %tab-focus;
-}
+  button:focus {
+    @extend %tab-focus;
+  }
+  /* code */
 
-/* code */
+  tt,
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: $monospace;
+  }
 
-tt,
-code,
-kbd,
-samp,
-pre {
-  font-family: $monospace;
-}
+  pre {
+    overflow-x: auto; /* add scrollbars to wide code blocks*/
+  }
+  /* horizontal rule */
 
-pre {
-  overflow-x: auto; /* add scrollbars to wide code blocks*/
-}
+  hr {
+    display: block;
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid $border-color;
+  }
+  /* lists */
 
-/* horizontal rule */
+  ul li,
+  ol li {
+    margin-bottom: 0.5em;
+  }
 
-hr {
-  display: block;
-  margin: 1em 0;
-  border: 0;
-  border-top: 1px solid $border-color;
-}
-
-/* lists */
-
-ul li,
-ol li {
-  margin-bottom: 0.5em;
-}
-
-li ul,
-li ol {
-  margin-top: 0.5em;
-}
-
-/*
+  li ul,
+  li ol {
+    margin-top: 0.5em;
+  }
+  /*
    Media and embeds
    ========================================================================== */
+  /* Figures and images */
 
-/* Figures and images */
+  figure {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 2em 0;
 
-figure {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 2em 0;
+    img,
+    iframe,
+    .fluid-width-video-wrapper {
+      margin-bottom: 1em;
+    }
 
-  img,
-  iframe,
-  .fluid-width-video-wrapper {
-    margin-bottom: 1em;
-  }
+    img {
+      width: 100%;
+      border-radius: $border-radius;
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+    }
 
-  img {
-    width: 100%;
-    border-radius: $border-radius;
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
-  }
+    > a {
+      display: block;
+    }
 
-  > a {
-    display: block;
-  }
+    &.half {
+      > a,
+      > img {
+        @include breakpoint($small) {
+          width: calc(50% - 0.5em);
+        }
+      }
 
-  &.half {
-    > a,
-    > img {
-      @include breakpoint($small) {
-        width: calc(50% - 0.5em);
+      figcaption {
+        width: 100%;
       }
     }
 
-    figcaption {
-      width: 100%;
-    }
-  }
+    &.third {
+      > a,
+      > img {
+        @include breakpoint($small) {
+          width: calc(33.3333% - 0.5em);
+        }
+      }
 
-  &.third {
-    > a,
-    > img {
-      @include breakpoint($small) {
-        width: calc(33.3333% - 0.5em);
+      figcaption {
+        width: 100%;
       }
     }
+  }
+  /* Figure captions */
 
-    figcaption {
-      width: 100%;
+  figcaption {
+    margin-bottom: 0.5em;
+    color: $muted-text-color;
+    font-family: $caption-font-family;
+    font-size: $type-size-6;
+
+    a {
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+
+      &:hover {
+        color: $link-color-hover;
+      }
     }
   }
-}
+  /* Fix IE9 SVG bug */
 
-/* Figure captions */
-
-figcaption {
-  margin-bottom: 0.5em;
-  color: $muted-text-color;
-  font-family: $caption-font-family;
-  font-size: $type-size-6;
-
-  a {
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
-
-    &:hover {
-      color: $link-color-hover;
-    }
+  svg:not(:root) {
+    overflow: hidden;
   }
-}
-
-/* Fix IE9 SVG bug */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/*
+  /*
    Navigation lists
    ========================================================================== */
-
-/**
+  /**
  * Removes margins, padding, and bullet points from navigation lists
  *
  * Example usage:
@@ -282,58 +278,56 @@ svg:not(:root) {
  *  </nav>
  */
 
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-  }
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
 
-  li {
-    list-style: none;
-  }
+    li {
+      list-style: none;
+    }
 
-  a {
-    text-decoration: none;
-  }
+    a {
+      text-decoration: none;
+    }
+    /* override white-space for nested lists */
+    ul li,
+    ol li {
+      margin-bottom: 0;
+    }
 
-  /* override white-space for nested lists */
-  ul li,
-  ol li {
-    margin-bottom: 0;
+    li ul,
+    li ol {
+      margin-top: 0;
+    }
   }
-
-  li ul,
-  li ol {
-    margin-top: 0;
-  }
-}
-
-/*
+  /*
    Global animation transition
    ========================================================================== */
 
-b,
-i,
-strong,
-em,
-blockquote,
-p,
-q,
-span,
-figure,
-img,
-h1,
-h2,
-header,
-input,
-a,
-tr,
-td,
-form button,
-input[type="submit"],
-.btn,
-.highlight,
-.archive__item-teaser {
-  -webkit-transition: $global-transition;
-  transition: $global-transition;
-}
+  b,
+  i,
+  strong,
+  em,
+  blockquote,
+  p,
+  q,
+  span,
+  figure,
+  img,
+  h1,
+  h2,
+  header,
+  input,
+  a,
+  tr,
+  td,
+  form button,
+  input[type="submit"],
+  .btn,
+  .highlight,
+  .archive__item-teaser {
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+  }

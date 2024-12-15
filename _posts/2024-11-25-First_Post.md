@@ -17,4 +17,4 @@ last_modified_at: 2024-11-25
 글이 안올라온다면 작살나게 밥먹으며 쉬고있을거에요.  
 ![image](https://i.pinimg.com/originals/ba/d9/fc/bad9fc99f856e5f1b1ade9eefe3a1c07.gif)  
 
-녜 끝입니다.
+녜 감사합니다.
